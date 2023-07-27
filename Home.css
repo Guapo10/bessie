@@ -1,0 +1,318 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #116466; */
+  
+}
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('./assets/pexels-kindel-media-7578552.mp4');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./assets/pexels-kindel-media-7578552.mp4') no-repeat center/cover;
+  z-index: -1;
+}
+
+/* Styles for the slogan */
+.slogan {
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+}
+/* .video-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.slogan h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  
+}
+
+.slogan span {
+  color: aqua; /* Replace with your desired highlight color */
+}
+
+.slogan p {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: rgb(229, 229, 230);
+  font-weight: 200;
+  
+}
+
+/* Styles for the "Services" button */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff7070; /* Replace with your desired button color */
+  color: #ffffff; /* Replace with your desired button text color */
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e63c3c; /* Replace with your desired button hover color */
+}
+
+/* Styles for the content container */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  text-align: center;
+}
+
+.text-container {
+  flex: 0 0 45%;
+  max-width: 45%;
+  margin-bottom: 0;
+}
+
+.image-container {
+  flex: 0 0 45%;
+  max-width: 45%;
+  margin-bottom: 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.side-image {
+  flex: 0 0 40%;
+  margin-right: 30px;
+}
+
+.side-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+
+.text-container h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Styles for the "Explore" button */
+.button.button-black {
+  background-color: #116466;
+  color: #ffffff; /* Replace with your desired button color */
+}
+
+.button.button-black:hover {
+  background-color: #1a1a1a; /* Replace with your desired button hover color */
+}
+
+/* Styles for the "What We Do" section */
+.what-we-do-section {
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.service {
+  flex: 0 0 30%;
+  text-align: center;
+  background-color: white;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  font-size: 16px;
+}
+
+
+
+/* buttons */
+
+ 
+.button-black {
+  background-color: #000;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button-black::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#000;
+  opacity: 0.3;
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: wave-effect 2s infinite linear;
+}
+
+@keyframes wave-effect {
+  0% {
+      transform: scaleX(0);
+  }
+  50% {
+      transform: scaleX(1);
+  }
+  100% {
+      transform: scaleX(0);
+  }
+}
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #000000;
+}
+.button {
+  display: inline-block;
+  padding: 10px 60px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.button:hover {
+  box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff;
+}
+
+
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column; /* Stack the cards on top of each other */
+    align-items: center; /* Center the cards horizontally */
+  }
+
+  .service {
+    flex: 0 0 80%; /* Expand the cards to occupy 80% of the container width */
+  }
+}
+
+
+/* ... previous CSS styles ... */
+
+/* Add media query for smaller screens */
+@media (max-width: 767px) {
+  .hero-section {
+    height: auto; /* Adjust height to fit content on smaller screens */
+    flex-direction: column; /* Stack the content on top of each other */
+    align-items: center; /* Center the content horizontally */
+    padding: 20px; /* Add some padding for better spacing */
+  }
+  .video-container {
+    order: 2; /* Move the video container below the slogan container */
+  }
+
+
+  .slogan {
+    max-width: 100%;
+    text-align: center;
+    order: 1;
+    top: 20%;
+   
+  }
+
+  .slogan h1 {
+    font-size: 36px; /* Reduce the font size for smaller screens */
+  }
+
+  .slogan p {
+    font-size: 16px; /* Reduce the font size for smaller screens */
+  }
+
+  .button {
+    display: block; /* Make the button full width on smaller screens */
+    width: 100%;
+    max-width: 200px; /* Set a max-width to avoid being too wide */
+    margin: 20px auto; /* Center the button */
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .text-container,
+  .image-container {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .slogan {
+    margin-top: 20px;
+    position: static;
+    transform: none;
+  }
+}

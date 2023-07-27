@@ -1,0 +1,24 @@
+/* Gallery.css */
+.navbar {
+    /* Add your specific styles for the navbar in the gallery component */
+    background-color: transparent;
+    color: #fcfcfc;
+    /* Add other styles as needed */
+  }
+  .navbar-nav .nav-link{
+    color: white;
+  }
+
+  /* Target specific elements if needed */
+  .Cactusl-footer-16 h3,
+  .footer-contact-list li,
+  .footer-contact-list li a,
+  .Cactusl-footer-16 .footer-gd-16 li a,
+  .Cactusl-footer-16 .footer-p p,
+  .Cactusl-footer-16 p.copy-text {
+    font-weight: bold;
+    color: white;
+    /* Set background color to black */
+    background-color: black;
+    margin-top: 40px;
+  }

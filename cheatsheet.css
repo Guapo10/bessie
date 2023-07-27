@@ -1,0 +1,142 @@
+/* Reset default styles for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color and styling for the body */
+body {
+  background-color: #12343b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Customize the navbar background color */
+.navbar {
+  background-color: #fafafa;
+}
+
+/* Customize the navbar brand (logo) */
+.navbar-brand {
+  color: #010101;
+  font-size: 24px;
+  margin-right: 50px; /* Adjust the spacing as needed */
+}
+
+/* Customize the navbar links */
+.navbar-nav .nav-link {
+  color: #000000;
+  font-size: 18px;
+  margin: 0 10px; /* Adjust the spacing as needed */
+}
+
+/* Change color and style for navbar links on hover */
+.navbar-nav .nav-link:hover {
+  color: #84acd5;
+  text-decoration: dashed;
+}
+
+/* Customize the active link */
+.navbar-nav .nav-link.active {
+  color: #1d0000;
+}
+
+/* Change color for active link on hover */
+.navbar-nav .nav-link.active:hover {
+  color: #0152a8 !important;
+}
+
+/* Customize the search button */
+.navbar .btn-outline-success {
+  background-color: transparent;
+  border-color: #007bff;
+  color: #007bff;
+}
+
+/* Add snake glow effect to the search button on hover */
+.navbar .btn-outline-success:hover {
+  color: #000000;
+  animation: snake-glow 1.5s infinite;
+}
+
+/* Change color and background for scrolled elements */
+.scrolled {
+  color: #fafafa;
+  background-color: #c89666;
+}
+
+/* Apply animation to the slogan */
+.slogan-animation {
+  animation-name: slideInUp;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+/* Define the slide-in animation */
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Define the snake glow animation */
+@keyframes snake-glow {
+  0% {
+    box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
+  }
+  50% {
+    box-shadow: 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000;
+  }
+  100% {
+    box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
+  }
+}
+
+/* Styling for the black button */
+.button-black {
+  background-color: #000;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Animation for the wave effect on the black button */
+.button-black::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: wave-effect 2s infinite linear;
+}
+
+/* Define the wave effect animation */
+@keyframes wave-effect {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}

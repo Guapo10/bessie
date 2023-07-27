@@ -1,0 +1,56 @@
+
+/* Customize the navbar background color */
+.navbar {
+    background-color: #fafafa;
+  }
+  
+  /* Customize the navbar brand (logo) */
+  .navbar-brand {
+    color: #010101;
+    font-size: 24px;
+    margin-right: 50px; /* Adjust the spacing as needed */
+  }
+  
+  /* Customize the navbar links */
+  .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 18px;
+    margin: 0 10px; /* Adjust the spacing as needed */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #84acd5;
+    text-decoration: dashed;
+  }
+  
+  /* Customize the active link */
+  .navbar-nav .nav-link.active {
+    color: #1d0000;
+  }
+  .navbar-nav .nav-link.active :hover{
+    color-scheme:#0152a8 !important;
+  }
+/* Customize the search button */
+.navbar .btn-outline-success {
+    background-color: transparent;
+    border-color: #007bff;
+    color: #007bff;
+  }
+  
+  /* Add snake glow effect to the search button */
+  .navbar .btn-outline-success:hover {
+    color: #000000;
+    animation: snake-glow 1.5s infinite;
+  }
+  .logo-image {
+    border-radius: 50%;
+    height: 1%; /* Adjust the height as per your requirement */
+    margin-left: 5px; /* Add some spacing between the text and logo */
+     width: 1px; /* Automatically adjust the width based on the height to maintain aspect ratio */
+
+  }
+
+  .scrolled {
+    color: #fafafa;
+    background-color:#c89666;
+  }

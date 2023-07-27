@@ -1,0 +1,132 @@
+.right-side {
+    margin-top: 0;
+    width: 100%;
+  }
+  
+  .Cactusl-footer-16 .navbar-brand {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .Cactusl-footer-16 h3 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 35px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+  }
+  
+  .footer-contact-list li,
+  .footer-contact-list li a {
+    font-size: 16px;
+    color: #eee;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  
+  .footer-contact-list li a:hover {
+    color: var(--primary-color);
+  }
+  
+  .Cactusl-footer-16 .footer-gd-16 li {
+    display: block;
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .Cactusl-footer-16 .footer-gd-16 li a {
+    line-height: 26px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  
+  .Cactusl-footer-16 .footer-gd-16 li a:hover {
+    opacity: 1;
+  }
+  
+  .Cactusl-footer-16 .footer-p p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  
+  .Cactusl-footer-16 ul.social li,
+  .Cactusl-footer-16 ul.jst-link li {
+    display: inline-block;
+    margin-right: 5px;
+  
+  }
+  
+  .Cactusl-footer-16 ul.social li a {
+    color: orange;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    
+    line-height: 44px;
+  }
+  
+  .Cactusl-footer-16 ul.social li:last-child a {
+    margin-right: 0px;
+  }
+  
+  .Cactusl-footer-16 ul.social li a:hover {
+    background: rgb(10, 10, 10);
+    color: orange;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .Cactusl-footer-16 p.copy-text {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  
+  .Cactusl-footer-16 p.copy-text a {
+    color: #e6e6e6;
+  }
+  
+  .Cactusl-footer-16 p.copy-text a:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+  
+  .below-section {
+    border-top: 1px solid rgb(84 96 163 / 15%);
+  }
+  
+  /* Target all elements within the footer */
+  .Cactusl-footer-16 * {
+    font-weight: bold;
+    color: white;
+    /* Set background color to black */
+    background-color: black;
+  }
+  
+  /* Target specific elements if needed */
+  .Cactusl-footer-16 h3,
+  .footer-contact-list li,
+  .footer-contact-list li a,
+  .Cactusl-footer-16 .footer-gd-16 li a,
+  .Cactusl-footer-16 .footer-p p,
+  .Cactusl-footer-16 p.copy-text {
+    font-weight: bold;
+    color: white;
+    /* Set background color to black */
+    background-color: black;
+  }
+  
